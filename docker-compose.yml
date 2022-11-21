@@ -1,0 +1,10 @@
+services:
+  shadowsocks:
+    container_name: dddd
+    image: shadowsocks/shadowsocks-libev
+    ports:
+      - "12388:8388"
+    environment:
+      - METHOD=aes-256-gcm
+      - PASSWORD=19MLSpPmNt
+    restart: always
